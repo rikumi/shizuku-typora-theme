@@ -1,11 +1,13 @@
 # 雫 Shizuku
 
 雫（しずく，Shizuku，雨滴）是一个干净的 Typora 主题，包含 Markdown 渲染样式，代码高亮样式，以及一些较高级的界面微调。
+
 Shizuku is a clean theme for Typora, including CSS for Markdown rendering, syntax highlighting, and some advanced UI tweaks.
 
 ## 开始使用 Get Started
 
 下载 `shizuku.css`，拷贝到 Typora 主题文件夹下，重启 Typora 即可使用。
+
 Download and copy `shizuku.css` to your Typora theme folder and restart Typora.
 
 ## 预览
