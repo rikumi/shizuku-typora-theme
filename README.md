@@ -10,7 +10,7 @@ Shizuku is a clean theme for Typora, including CSS for Markdown rendering, synta
 
 Download and copy `shizuku.css` to your Typora theme folder and restart Typora.
 
-## 预览
+## 预览 Screenshots
 
 ![](http://static.myseu.cn/2017-12-19-WX20171219-125418%402x.png)
 
@@ -22,7 +22,7 @@ Download and copy `shizuku.css` to your Typora theme folder and restart Typora.
 
 ![](http://static.myseu.cn/2017-12-19-WX20171219-131026%402x.png)
 
-## 设计细节
+## 设计细节 Design details
 
 1. 正在编辑的 `**` 加粗、`*` 倾斜、`\`` 代码等，两端的语法标记符号有一定的留白，视觉上非常舒适；
 2. 选中的文本分行清晰，蓝色背景改为浅灰色；
@@ -33,3 +33,4 @@ Download and copy `shizuku.css` to your Typora theme folder and restart Typora.
 7. 使用较优雅的 Avenir Next 正文字体以及 Fira Code 等宽字体；
 8. 更改代码高亮方案为 [neo](https://codemirror.net/theme/neo.css)，与整体风格非常搭配；
 9. 更改代码片段的选中效果，去掉 CodeMirror 标志性的紫色选中背景，改为分行的浅色选中背景；
+10. 所有块级元素之间固定间距 `36px`。
