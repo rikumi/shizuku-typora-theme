@@ -20,7 +20,7 @@ Download and copy `shizuku.css` to your Typora theme folder and restart Typora.
 
 ---
 
-![](http://static.myseu.cn/2017-12-19-WX20171219-125537%402x.png)
+![](http://static.myseu.cn/2017-12-19-WX20171219-131026%402x.png)
 
 ## 设计细节
 
