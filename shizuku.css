@@ -1,0 +1,444 @@
+#write {
+  font-family: 'Avenir Next', 'PingFang SC', 'Microsoft YaHei UI', 'Microsoft YaHei', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  word-wrap: break-word;
+  text-align: justify;
+  padding: 72px;
+  -webkit-user-select: none;
+  --theme-color: #2bd;
+}
+#write ::selection,
+#write ::-webkit-selection {
+  background: #f0f0f0;
+}
+#write>* {
+  margin-top: 36px !important;
+  margin-bottom: 36px !important;
+  -webkit-user-select: text;
+}
+#write>*:first-child {
+  margin-top: 0 !important;
+}
+#write>*:last-child {
+  margin-bottom: 0 !important;
+}
+#write a, #write a:hover, #write a:active, #write a:focus, #write a:visited {
+  color: var(--theme-color);
+  text-decoration: none;
+}
+#write a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+#write .absent {
+  color: #c00;
+}
+#write p,#write blockquote,#write ul,#write ol,#write dl,#write table,#write pre {
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+#write hr {
+  display: inline-block;
+  width: 25px;
+  height: 1px;
+  line-height: 1px;
+  border: 0;
+  margin: 0;
+  background: #ddd;
+  vertical-align: middle;
+}
+#write .md-hr {
+  outline: none !important;
+}
+#write .md-hr.md-focus hr {
+  background: var(--theme-color);
+}
+#write blockquote {
+  position: relative;
+}
+#write blockquote::before {
+  content: '> ';
+  display: block;
+  position: absolute;
+  left: -72px;
+  width: 60px;
+  text-align: right;
+  color: #ddd;
+  font-weight: normal;
+}
+#write blockquote>p {
+  margin-bottom: 10px;
+}
+#write .loweralpha {
+  list-style-type: lower-alpha;
+}
+
+#write h1,#write h2,#write h3,#write h4,#write h5,#write h6 {
+  font-weight: bold;
+  line-height: 1.25;
+}
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
+  vertical-align: baseline;
+}
+#write h1::before,
+#write h2::before,
+#write h3::before,
+#write h4::before,
+#write h5::before,
+#write h6::before {
+  border: 0 none !important;
+  border-radius: 0 !important;
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+  float: none !important;
+  padding-left: initial !important;
+  padding-right: initial !important;
+  vertical-align: inherit !important;
+
+  display: inline-block;
+  margin-left: -72px;
+  width: 60px;
+  margin-right: 12px;
+  height: 1em;
+  line-height: 1em;
+  text-align: right;
+  color: #ddd;
+  font-size: 14px;
+  font-weight: normal;
+}
+#write h1::before {
+  content: 'h1'
+}
+#write h2::before {
+  content: 'h2'
+}
+#write h3::before {
+  content: 'h3'
+}
+#write h4::before {
+  content: 'h4'
+}
+#write h5::before {
+  content: 'h5'
+}
+#write h6::before {
+  content: 'h6'
+}
+#write ul,#write ol {
+  padding-left: 0;
+}
+#write ul ul,#write ul ol,#write ol ol,#write ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#write li>p {
+}
+#write li+li {
+  margin-top: 0.25em;
+}
+#write dl {
+  padding: 0;
+}
+#write dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+#write dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+#write .task-list-item {
+  padding-left: 0;
+}
+#write .task-list-item input[type="checkbox"] {
+  margin: 0.36em 5px;
+  margin-left: -24px;
+}
+#write table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  border-collapse: collapse;
+}
+#write table th {
+  font-weight: bold;
+}
+#write table th,#write table td {
+  padding: 5px 10px;
+  border: 1px solid #eee;
+  border-collapse: collapse;
+}
+#write table tr {
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  border-collapse: collapse;
+}
+#write img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+#write img[align=right] {
+  padding-left: 20px;
+}
+#write img[align=left] {
+  padding-right: 20px;
+}
+#write .emoji {
+  max-width: none;
+  vertical-align: text-top;
+  background-color: transparent;
+}
+#write span.frame {
+  display: block;
+  overflow: hidden;
+}
+#write span.frame>span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+#write span.frame span img {
+  display: block;
+  float: left;
+}
+#write span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: #333;
+}
+#write span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+#write span.align-center>span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+#write span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+#write span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+#write span.align-right>span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+#write span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+#write span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+#write span.float-left span {
+  margin: 13px 0 0;
+}
+#write span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+#write span.float-right>span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+#write code {
+  margin: 0 5px;
+  padding: 0.15em 0;
+  border-bottom: 1px solid var(--theme-color);
+}
+#write code, #write tt, #write pre {
+  font: 95% "Fira Code", "Source Code Pro", Consolas, "Liberation Mono", Menlo, Courier, monospace, "PingFang SC", "Microsoft YaHei UI";
+  user-select: auto;
+  -webkit-user-select: auto;
+}
+#write code::before,#write code::after,#write tt::before,#write tt::after {
+  letter-spacing: -0.2em;
+}
+#write code br,#write tt br {
+  display: none;
+}
+#write pre {
+  word-wrap: normal;
+}
+#write pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+#write .highlight {
+  margin-bottom: 16px;
+}
+#write .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+#write .highlight pre,#write pre {
+  overflow: auto;
+  font-size: 95%;
+  line-height: 1.45;
+  background: none;
+}
+#write pre:not(.CodeMirror-line)::before,
+#write pre:not(.CodeMirror-line)::after {
+  content: ' ';
+  display: block;
+  width: 25px;
+  height: 1px;
+  background: #ddd;
+  margin: 20px 0;
+  -webkit-user-select: none;
+}
+#write pre:not(.CodeMirror-line).md-focus::before,
+#write pre:not(.CodeMirror-line).md-focus::after {
+  background: var(--theme-color);
+}
+#write pre code,#write pre tt {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+#write pre.CodeMirror-line {
+  margin-bottom: 0;
+  padding: 0;
+}
+#write pre code::before,#write pre code::after,#write pre tt::before,#write pre tt::after {
+  content: normal;
+}
+#write .csv-data td,#write .csv-data th {
+  padding: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1;
+  text-align: left;
+  white-space: nowrap;
+}
+#write .csv-data .blob-num {
+  padding: 10px 8px 9px;
+  text-align: right;
+  background: #fff;
+  border: 0;
+}
+#write .csv-data tr {
+  border-top: 0;
+}
+#write .csv-data th {
+  font-weight: bold;
+  background: #f0f0f0;
+  border-top: 0;
+}
+#write .md-meta.md-before,
+#write .md-meta.md-after {
+  padding: 0 0.2em;
+  color: #ddd;
+  background: none;
+  font-family: 'Avenir Next', 'PingFang SC', 'Microsoft YaHei UI', 'Microsoft YaHei', sans-serif;
+}
+#write .md-meta.md-before {
+  padding-left: 0.4em;
+}
+#write .md-meta.md-after {
+  padding-right: 0.4em;
+}
+#write .md-meta.md-show-hint::after {
+  box-shadow: none;
+  width: auto !important;
+  color: #fff;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, .8);
+  border-radius: 4px;
+}
+#write .md-fences {
+  overflow: visible;
+}
+#write .md-fences .code-tooltip {
+  box-shadow: none;
+  position: absolute;
+  left: 15px;
+  bottom: -10px;
+  right: auto;
+  top: auto;
+}
+#write .md-fences .code-tooltip input {
+  outline: none;
+  text-align: left;
+  color: #bbb;
+}
+#write .md-fences.md-focus .code-tooltip input {
+  color: var(--theme-color);
+}
+#write .md-fences .code-tooltip input::placeholder {
+  color: #ddd;
+}
+
+.CodeMirror {
+  color: #2e383c !important;
+  --search-select-bg-color: #f0f0f0;
+  --search-select-text-color: #2e383c;
+}
+.CodeMirror-selected {
+  background: none;
+}
+.cm-comment {
+  color: #75787b !important;
+}
+.cm-keyword, .cm-property {
+  color: #1d75b3 !important;
+}
+.cm-atom, .cm-number {
+  color: #75438a !important;
+}
+.cm-node, .cm-tag {
+  color: #9c3328 !important;
+}
+.cm-string {
+  color: #b35e14 !important;
+}
+.cm-variable, .cm-qualifier, .cm-def {
+  color: #047d65 !important;
+}
+.md-focus .CodeMirror-activeline-background {
+  background: #fafafa !important;
+}
