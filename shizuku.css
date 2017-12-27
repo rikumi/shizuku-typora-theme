@@ -7,7 +7,7 @@
   padding: 72px;
   -webkit-user-select: none;
   --theme-color: #2bd;
-  max-width: 1000px;
+  max-width: 960px;
 }
 #write ::selection,
 #write ::-webkit-selection {
