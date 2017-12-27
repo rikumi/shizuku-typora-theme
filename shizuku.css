@@ -419,7 +419,7 @@
   --search-select-text-color: #2e383c;
 }
 .CodeMirror-selected {
-  background: none;
+  background: none !important;
 }
 .cm-comment {
   color: #75787b !important;
