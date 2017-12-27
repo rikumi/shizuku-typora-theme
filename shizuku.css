@@ -438,7 +438,8 @@
 .cm-qualifier, .cm-qualifier.CodeMirror-selectedtext,
 .cm-def, .cm-def.CodeMirror-selectedtext,
 .cm-property, .cm-property.CodeMirror-selectedtext,
-.cm-operator, .cm-operator.CodeMirror-selectedtext {
+.cm-operator, .cm-operator.CodeMirror-selectedtext,
+.cm-attribute, .cm-attribute.CodeMirror-selectedtext {
   color: var(--shizuku-text-color) !important;
 }
 .cm-comment, .cm-comment.CodeMirror-selectedtext {
