@@ -1,0 +1,9 @@
+@import "shizuku.css";
+:root {
+  --shizuku-background-color: #212121;
+  --shizuku-text-color: #858585;
+  --shizuku-theme-color: #3c946c;
+}
+#write img {
+  -webkit-filter: brightness(0.7);
+}

@@ -1,3 +1,23 @@
+:root {
+  background: var(--shizuku-background-color);
+  color: var(--shizuku-text-color);
+  --shizuku-background-color: #fff;
+  --shizuku-text-color: #333;
+  --shizuku-theme-color: #31b077;
+}
+#typora-sidebar {
+  background: var(--shizuku-background-color);
+}
+#typora-sidebar,
+#typora-sidebar .sidebar-tabs,
+#typora-sidebar .file-list-item,
+#typora-sidebar .file-list-item.active,
+#typora-sidebar .sidebar-footer {
+  border-color: rgba(160, 160, 160, .1) !important;
+}
+#typora-sidebar .file-list-item.active {
+  background: rgba(160, 160, 160, .1);
+}
 #write {
   font-family: 'Avenir Next', 'PingFang SC', 'Microsoft YaHei UI', 'Microsoft YaHei', sans-serif;
   font-size: 16px;
@@ -6,12 +26,11 @@
   text-align: justify;
   padding: 72px;
   -webkit-user-select: none;
-  --theme-color: #2bd;
   max-width: 960px;
 }
 #write ::selection,
 #write ::-webkit-selection {
-  background: #f0f0f0;
+  background: rgba(160, 160, 160, .1);
 }
 #write>* {
   margin-top: 36px !important;
@@ -25,15 +44,12 @@
   margin-bottom: 0 !important;
 }
 #write a, #write a:hover, #write a:active, #write a:focus, #write a:visited {
-  color: var(--theme-color);
+  color: var(--shizuku-theme-color);
   text-decoration: none;
 }
 #write a:not([href]) {
   color: inherit;
   text-decoration: none;
-}
-#write .absent {
-  color: #c00;
 }
 #write p,#write blockquote,#write ul,#write ol,#write dl,#write table,#write pre {
   text-align: justify;
@@ -47,14 +63,14 @@
   line-height: 1px;
   border: 0;
   margin: 0;
-  background: #ddd;
+  background: rgba(128, 128, 128, .4);
   vertical-align: middle;
 }
 #write .md-hr {
   outline: none !important;
 }
 #write .md-hr.md-focus hr {
-  background: var(--theme-color);
+  background: var(--shizuku-theme-color);
 }
 #write blockquote {
   position: relative;
@@ -66,7 +82,7 @@
   left: -72px;
   width: 60px;
   text-align: right;
-  color: #ddd;
+  background: rgba(128, 128, 128, .4);
   font-weight: normal;
 }
 #write blockquote>p {
@@ -111,7 +127,7 @@
   height: 1em;
   line-height: 1em;
   text-align: right;
-  color: #ddd;
+  color: rgba(128, 128, 128, .4);
   font-size: 14px;
   font-weight: normal;
 }
@@ -177,18 +193,16 @@
 }
 #write table th,#write table td {
   padding: 5px 10px;
-  border: 1px solid #eee;
+  border: 1px solid rgba(128, 128, 128, .1);
   border-collapse: collapse;
 }
 #write table tr {
-  background-color: #fff;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid rgba(128, 128, 128, .4);
   border-collapse: collapse;
 }
 #write img {
   max-width: 100%;
   box-sizing: content-box;
-  background-color: #fff;
 }
 #write img[align=right] {
   padding-left: 20px;
@@ -212,7 +226,7 @@
   padding: 7px;
   margin: 13px 0 0;
   overflow: hidden;
-  border: 1px solid #ddd;
+  border: 1px solid rgba(128, 128, 128, .4);
 }
 #write span.frame span img {
   display: block;
@@ -278,7 +292,7 @@
 #write code {
   margin: 0 5px;
   padding: 0.15em 0;
-  border-bottom: 1px solid var(--theme-color);
+  border-bottom: 1px solid var(--shizuku-theme-color);
 }
 #write code, #write tt, #write pre {
   font: 95% "Fira Code", "Source Code Pro", Consolas, "Liberation Mono", Menlo, Courier, monospace, "PingFang SC", "Microsoft YaHei UI";
@@ -322,13 +336,13 @@
   display: block;
   width: 25px;
   height: 1px;
-  background: #ddd;
+  background: rgba(128, 128, 128, .4);
   margin: 20px 0;
   -webkit-user-select: none;
 }
 #write pre:not(.CodeMirror-line).md-focus::before,
 #write pre:not(.CodeMirror-line).md-focus::after {
-  background: var(--theme-color);
+  background: var(--shizuku-theme-color);
 }
 #write pre code,#write pre tt {
   display: inline;
@@ -359,7 +373,6 @@
 #write .csv-data .blob-num {
   padding: 10px 8px 9px;
   text-align: right;
-  background: #fff;
   border: 0;
 }
 #write .csv-data tr {
@@ -367,13 +380,12 @@
 }
 #write .csv-data th {
   font-weight: bold;
-  background: #f0f0f0;
   border-top: 0;
 }
 #write .md-meta.md-before,
 #write .md-meta.md-after {
   padding: 0 0.2em;
-  color: #ddd;
+  color: rgba(160, 160, 160, .4);
   background: none;
   font-family: 'Avenir Next', 'PingFang SC', 'Microsoft YaHei UI', 'Microsoft YaHei', sans-serif;
 }
@@ -386,7 +398,6 @@
 #write .md-meta.md-show-hint::after {
   box-shadow: none;
   width: auto !important;
-  color: #fff;
   padding: 5px 10px;
   background: rgba(0, 0, 0, .8);
   border-radius: 4px;
@@ -408,38 +419,44 @@
   color: #bbb;
 }
 #write .md-fences.md-focus .code-tooltip input {
-  color: var(--theme-color);
+  color: var(--shizuku-theme-color);
 }
 #write .md-fences .code-tooltip input::placeholder {
-  color: #ddd;
+  color: rgba(128, 128, 128, .4);
 }
 
 .CodeMirror {
-  color: #2e383c !important;
-  --search-select-bg-color: #f0f0f0;
-  --search-select-text-color: #2e383c;
+  color: #808080 !important;
+  --search-select-bg-color: rgba(160, 160, 160, .1);
+  --search-select-text-color: var(--shizuku-text-color);
 }
 .CodeMirror-selected {
   background: none !important;
 }
-.cm-comment {
-  color: #75787b !important;
+.cm-variable, .cm-variable.CodeMirror-selectedtext,
+.cm-variable-2, .cm-variable-2.CodeMirror-selectedtext,
+.cm-qualifier, .cm-qualifier.CodeMirror-selectedtext,
+.cm-def, .cm-def.CodeMirror-selectedtext,
+.cm-property, .cm-property.CodeMirror-selectedtext,
+.cm-operator, .cm-operator.CodeMirror-selectedtext {
+  color: var(--shizuku-text-color) !important;
 }
-.cm-keyword, .cm-property {
-  color: #1d75b3 !important;
+.cm-comment, .cm-comment.CodeMirror-selectedtext {
+  color: rgba(96, 96, 96, .7) !important;
 }
-.cm-atom, .cm-number {
-  color: #75438a !important;
+.cm-keyword, .cm-keyword.CodeMirror-selectedtext,
+.cm-builtin, .cm-builtin.CodeMirror-selectedtext,
+.cm-atom, .cm-atom.CodeMirror-selectedtext,
+.cm-number, .cm-number.CodeMirror-selectedtext,
+.cm-node, .cm-node.CodeMirror-selectedtext,
+.cm-tag, .cm-tag.CodeMirror-selectedtext,
+.cm-string, .cm-string.CodeMirror-selectedtext,
+.cm-string-2, .cm-string-2.CodeMirror-selectedtext {
+  color: var(--shizuku-theme-color) !important;
 }
-.cm-node, .cm-tag {
-  color: #9c3328 !important;
-}
-.cm-string {
-  color: #b35e14 !important;
-}
-.cm-variable, .cm-qualifier, .cm-def {
-  color: #047d65 !important;
+.CodeMirror-cursor {
+  border-color: rgba(160, 160, 160, .8) !important;
 }
 .md-focus .CodeMirror-activeline-background {
-  background: #fafafa !important;
+  background: rgba(160, 160, 160, .1) !important;
 }
