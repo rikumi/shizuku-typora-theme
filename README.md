@@ -12,15 +12,7 @@ Download and copy `shizuku.css` to your Typora theme folder and restart Typora.
 
 ## 预览 Screenshots
 
-![](http://static.myseu.cn/2017-12-19-WX20171219-125418%402x.png)
-
----
-
-![](http://static.myseu.cn/2017-12-19-WX20171219-125449%402x.png)
-
----
-
-![](http://static.myseu.cn/2017-12-19-WX20171219-131026%402x.png)
+![](http://static.myseu.cn/2017-12-29-WX20171229-135011%402x%20copy.jpg)
 
 ## 设计细节 Design details
 
@@ -31,6 +23,6 @@ Download and copy `shizuku.css` to your Typora theme folder and restart Typora.
 5. 分割线和代码片段的短横线在选中时会变蓝色；
 6. 所有标题（H1 ~ H6）均为加粗，便于区分；
 7. 使用较优雅的 Avenir Next 正文字体以及 Fira Code 等宽字体；
-8. 更改代码高亮方案为 [neo](https://codemirror.net/theme/neo.css)，与整体风格非常搭配；
+8. 更改代码高亮方案为独创的黑白灰蓝单色调，与整体风格更搭配；
 9. 更改代码片段的选中效果，去掉 CodeMirror 标志性的紫色选中背景，改为分行的浅色选中背景；
-10. 所有块级元素之间固定间距 `36px`。
+10. 所有块级元素之间固定间距 `36px`，排版更加简洁清晰。
