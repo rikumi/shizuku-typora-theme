@@ -463,6 +463,7 @@
 .cm-node, .cm-node.CodeMirror-selectedtext,
 .cm-tag, .cm-tag.CodeMirror-selectedtext,
 .cm-string, .cm-string.CodeMirror-selectedtext,
+.cm-variable-3, .cm-variable-3.CodeMirror-selectedtext,
 .cm-string-2, .cm-string-2.CodeMirror-selectedtext {
   color: var(--shizuku-theme-color) !important;
 }
