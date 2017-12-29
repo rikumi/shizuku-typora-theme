@@ -17,6 +17,7 @@
 }
 #typora-sidebar .file-list-item.active {
   background: rgba(160, 160, 160, .1);
+  border-color: transparent !important;
 }
 #typora-sidebar .file-list-item-parent-loc,
 #typora-sidebar .file-list-item-time {
