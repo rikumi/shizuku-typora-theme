@@ -3,7 +3,7 @@
   color: var(--shizuku-text-color);
   --shizuku-background-color: #fff;
   --shizuku-text-color: #333;
-  --shizuku-theme-color: #31b077;
+  --shizuku-theme-color: #2bd;
 }
 #typora-sidebar {
   background: var(--shizuku-background-color);
@@ -17,6 +17,10 @@
 }
 #typora-sidebar .file-list-item.active {
   background: rgba(160, 160, 160, .1);
+}
+#typora-sidebar .file-list-item-parent-loc,
+#typora-sidebar .file-list-item-time {
+  font-family: inherit;
 }
 #write {
   font-family: 'Avenir Next', 'PingFang SC', 'Microsoft YaHei UI', 'Microsoft YaHei', sans-serif;
