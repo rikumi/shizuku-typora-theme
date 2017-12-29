@@ -91,12 +91,12 @@
 #write .loweralpha {
   list-style-type: lower-alpha;
 }
-#write .md-blockmeta, #write .md-expand {
+#write .md-blockmeta, #write .md-header-span {
   font-style: normal;
   font-weight: normal;
   color: rgba(128, 128, 128, .4);
 }
-#write .md-expand {
+#write .md-header-span {
   background: rgba(128, 128, 128, .2);
 }
 #write h1,#write h2,#write h3,#write h4,#write h5,#write h6 {
