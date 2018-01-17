@@ -161,7 +161,18 @@
   content: 'h6'
 }
 #write ul,#write ol {
+  padding-left: 2em;
+  font-size: 95%;
+}
+#write ul {
+  list-style-type: disc;
+}
+#write ol {
+  list-style-type: decimal;
+}
+#write>ul,#write>ol {
   padding-left: 0;
+  font-size: inherit;
 }
 #write ul ul,#write ul ol,#write ol ol,#write ol ul {
   margin-top: 0;
